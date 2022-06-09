@@ -1,0 +1,12 @@
+.item {
+    background-color: cyan;
+    margin: 1em;
+}
+.card-img {
+    display: flex;
+    justify-content: center;
+}
+.card-img img {
+    width: 30px;
+    height: 30px;
+}
