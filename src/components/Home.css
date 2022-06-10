@@ -1,0 +1,15 @@
+@keyframes myAnim {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.decore {
+    position: absolute;
+    right: -20%;
+    top: -50%;
+    animation: myAnim 6s linear 0s infinite normal forwards;
+}

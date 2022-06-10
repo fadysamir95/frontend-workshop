@@ -22,22 +22,14 @@ const Cards = props => {
             return id;
         })
 
-        // let currentCategoryName = selectedCategory.map(category => {
-        //     let name = category.name;
-        //     return name;
-        // })
-        // console.log(currentCategoryName)
-
         let valueId = currentCategoryId.join();
         console.log(valueId);
 
         let selectedItems = newsListing.filter(item => {
            if (item.categoryID === valueId) {
-                // hn3ml al show property bta3o yes
                 item.showOnHomepage = 'yes'
             }
             else if (item.categoryID !== valueId) {
-                // hn3ml al show property bta3o no
                 if (item.categoryID === 'yes') {
                     item.showOnHomepage = 'no'
                 }
