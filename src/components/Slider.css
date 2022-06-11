@@ -1,10 +1,10 @@
 .carousel-item {
-    min-height: 628px;
+    min-height: 615px;
 }
 .slider-caption {
     text-align: left;
     color: #444;
-    margin-top: 5rem;
+    margin-top: 4.5rem;
 }
 .slider-caption .slider-category {
     color: #F215B6 !important;
@@ -12,20 +12,86 @@
     font-size: 1.25rem;
     font-family: "poppins-bold";
     margin-bottom: 2.3rem;
+    text-transform: uppercase;
+    position: relative;
 }
 .slider-caption .slider-title {
     font-size: 4.6875rem;
     font-family: "volkhov-bold";
     margin-bottom: 1.2rem;
+    position: relative;
+    z-index: 2;
+    color: #181E4B;
+}
+.slider-caption .title-shape {
+    position: absolute;
+    top: 180px;
+    left: 389px;
+    z-index: 0;
 }
 .slider-caption .slider-brief {
     max-width: 477px;
     font-size: 1rem;
     font-family: "poppins-medium";
+    margin-bottom: 1.8rem;
 }
 .slider-img {
     position: absolute;
     bottom: 0;
-    right: 5%;
-    width: 650px;
+    right: 4%;
+    width: 670px;
+}
+.slider-btn {
+    background-color: #FF7C16 !important;
+    border-color: #FF7C16 !important;
+    width: 150px !important;
+    border-radius: 10px !important;
+    height: 50px !important;
+    color: #fff !important;
+    font-size: 1rem !important;
+}
+.carousel-indicators {
+    right: 0 !important;
+    bottom: 15px !important;
+    left: 0 !important;
+    justify-content: flex-start !important;
+    margin-bottom: 0.5rem;
+    margin-left: 10% !important;
+    align-items: center;
+}
+.carousel-indicators button {
+    width: 35px !important;
+    height: 35px !important;
+    padding: 0;
+    margin-right: 120px !important;
+    margin-left: 0px;
+    border-radius: 50% !important;
+    background-color: #F215B6 !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+}
+.carousel-indicators button.active {
+    width: 45px !important;
+    height: 45px !important;
+}
+.carousel-indicators button:first-child::after {
+    content: ". . . . . . .";
+    color: #353535;
+    font-size: 27px;
+    position: absolute;
+    bottom: 10px;
+    left: 602px;
+    font-weight: 600;
+}
+.carousel-indicators button:nth-child(2)::after {
+    content: ". . . . . . .";
+    color: #353535;
+    font-size: 27px;
+    position: absolute;
+    bottom: 10px;
+    left: 767px;
+    font-weight: 600;
+}
+.carousel-control-prev, .carousel-control-next {
+    display: none !important;
 }

@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import { Button, Card, Row, Col , Container } from 'react-bootstrap'
 import newsListing from '../data/news_listing.json'
 import categories from '../data/news_category-listing.json'
-// import * as newsListing from '../data/news_listing.json'
-import { Button, Card } from 'react-bootstrap';
 import './Cards.css'
 
 const Cards = props => {
@@ -37,6 +36,9 @@ const Cards = props => {
                     item.showOnHomepage = 'no'
                 } 
             }
+            else {
+                console.log("")
+            }
         });
         console.log(selectedItems);
 
@@ -44,10 +46,10 @@ const Cards = props => {
 
     return (
         <div>
-            <div className="container">
+            <Container>
 
-                <div className="row">
-                    <div className="col-md-12">
+                <Row>
+                    <Col md={12}>
                         {
                             categories.map(category => {
                                 return (
@@ -55,14 +57,14 @@ const Cards = props => {
                                 )
                             })
                         }
-                    </div>
-                </div>
+                    </Col>
+                </Row>
 
                 <div className="row">
                     {
                         newsListing.map(item => {
                             return (
-                                (item.showOnHomepage == "yes" ? 
+                                (item.showOnHomepage === "yes" ? 
                                     <div className="col-md-4">
                                         <Card style={{ width: 'auto' }}>
                                             <Card.Img variant="top" src={item.urlToImage} />
@@ -78,13 +80,13 @@ const Cards = props => {
                                                 }
                                             </Card.Body>
                                         </Card>
-                                    </div> : console.log()
+                                    </div> : null
                                 )
                             );
                         })
                     }
                 </div>
-            </div>
+            </Container>
         </div>
     )
 }

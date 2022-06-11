@@ -30,11 +30,6 @@
 .logo {
     width: 160px;
 }
-@media (min-width: 1200px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl {
-      max-width: 1160px !important;
-    }
-}
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
       justify-content: flex-end !important;

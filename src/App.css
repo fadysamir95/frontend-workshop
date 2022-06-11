@@ -15,14 +15,17 @@
   font-family: "volkhov-bold";
   src: url("assets/fonts/Volkhov-Bold.ttf");
 }
+@font-face {
+  font-family: "open-sans-regular";
+  src: url("assets/fonts/OpenSans-Regular.ttf");
+}
 
 /* Main CSS */
+* {
+  box-sizing: border-box;
+}
 html, body {
   font-size: 16px;
   font-family: "google-sans-medium";
   overflow-x: hidden;
-}
-a {
-  font-family: "google-sans-medium";
-  color: #212832;
 }
