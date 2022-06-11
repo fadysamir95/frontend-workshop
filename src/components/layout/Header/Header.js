@@ -9,7 +9,7 @@ const Header = props => {
       {/* Navbar */}
       <Navbar expand="lg">
         <Container>
-          <Navbar.Brand href="#"><img src={companyLogo} alt="Company Logo" className="logo" /></Navbar.Brand>
+          <Navbar.Brand href="#"><img src={companyLogo} alt="LinkDevelopment" className="logo" /></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav

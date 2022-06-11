@@ -184,7 +184,7 @@
     },
     {
         "id": "20",
-        "categoryID":"5",
+        "categoryID":"2",
         "title": "PSA: Update Zoom on Mac to fix a bug that keeps your mic on after meetings",
         "description": "Zoom says no audio was “transmitted back to Zoom’s platform”",
         "publishedDate": "2022-05-22",

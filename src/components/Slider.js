@@ -8,7 +8,6 @@ const Slider = props => {
     return (
         <div>
             <Carousel>
-
                 <Carousel.Item>
                     <Container>
                         <Row>
@@ -18,7 +17,7 @@ const Slider = props => {
                                     <h2 className="slider-title">25 Years of Business Growth</h2>
                                     <img src={Shape} alt={Shape} className="title-shape" />
                                     <p className="slider-brief">Link Development, the global technology solutions provider and an A15 company, unveiled today that it has recently marked its Silver Jubilee anniversary.</p>
-                                    <Button variant="primary" className="slider-btn">Find out more</Button>{' '}
+                                    <Button variant="primary" className="main-btn">Find out more</Button>{' '}
                                 </div>
                             </Col>
                         </Row>
@@ -37,7 +36,7 @@ const Slider = props => {
                                     <h2 className="slider-title">25 Years of Business Growth</h2>
                                     <img src={Shape} alt={Shape} className="title-shape" />
                                     <p className="slider-brief">Link Development, the global technology solutions provider and an A15 company, unveiled today that it has recently marked its Silver Jubilee anniversary.</p>
-                                    <Button variant="primary" className="slider-btn">Find out more</Button>{' '}
+                                    <Button variant="primary" className="main-btn">Find out more</Button>{' '}
                                 </div>
                             </Col>
                         </Row>
@@ -56,7 +55,7 @@ const Slider = props => {
                                     <h2 className="slider-title">25 Years of Business Growth</h2>
                                     <img src={Shape} alt={Shape} className="title-shape" />
                                     <p className="slider-brief">Link Development, the global technology solutions provider and an A15 company, unveiled today that it has recently marked its Silver Jubilee anniversary.</p>
-                                    <Button variant="primary" className="slider-btn">Find out more</Button>{' '}
+                                    <Button variant="primary" className="main-btn">Find out more</Button>{' '}
                                 </div>
                             </Col>
                         </Row>

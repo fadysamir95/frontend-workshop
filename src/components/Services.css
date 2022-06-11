@@ -56,6 +56,9 @@
     align-items: center;
     transform: translateX(-91px);
 }
+.col-one {
+    transform: translateY(53px)
+}
 .col-two {
     transform: translateY(60px)
 }
