@@ -129,7 +129,6 @@ const Cards = props => {
                     <Row>
                         <Col md={12}>
                             <div className="d-flex justify-content-center">
-                                {/* <Button variant="primary" className="main-btn">View All News</Button>{' '} */}
                                 <Button variant="primary" className="main-btn" value={'All'} onClick={(e) => setVisibility(e.target.value)}>View All News</Button>
                             </div> 
                         </Col>
