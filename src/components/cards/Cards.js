@@ -39,13 +39,15 @@ const Cards = props => {
                     item.showOnHomepage = 'no'
                 }
             }
+            return item;
         });
 
         // All Categories
         newsListing.filter(item => {
-            if (visibility == 'All') {
+            if (visibility === 'All') {
                 item.showOnHomepage = 'yes'
             }
+            return item;
         })
 
         console.log(newsListing);
