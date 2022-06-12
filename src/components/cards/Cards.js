@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Button, Card, Row, Col , Container } from 'react-bootstrap'
-import newsListing from '../data/news_listing.json'
-import categories from '../data/news_category-listing.json'
-import Circles from '../assets/img/cards-decor.png'
-import Calendar from '../assets/img/icons/calendar.png'
-import Favorite from '../assets/img/icons/favorite.png'
-import Share from '../assets/img/icons/share.png'
-import './Cards.css'
+import newsListing from '../../data/news_listing.json'
+import categories from '../../data/news_category-listing.json'
+import Circles from '../../assets/img/cards-decor.png'
+import Calendar from '../../assets/img/icons/calendar.png'
+import Favorite from '../../assets/img/icons/favorite.png'
+import Share from '../../assets/img/icons/share.png'
+import './cards.scss'
 
 const Cards = props => {
 
@@ -79,8 +79,8 @@ const Cards = props => {
                             newsListing.map(item => {
                                 return (
                                     (item.showOnHomepage === "yes" ? 
-                                        <Col md={4} className="d-flex">
-                                            <Card style={{ width: 'auto' }}>
+                                        <Col md={4} className="d-flex justify-content-center">
+                                            <Card style={{ width: '98%' }}>
                                                 <Card.Img variant="top" src={item.urlToImage} className="card-img" />
                                                 <Card.Body>
                                                     <Card.Title>{item.title}</Card.Title>

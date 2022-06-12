@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Logo from '../../../assets/img/logo.png'
-import './Footer.css'
+import './footer.scss'
 
 const Footer = props => {
     return (

@@ -1,13 +1,7 @@
-@keyframes myAnim {
-	0% {
-		transform: rotate(0);
-	}
+/* Animations */
+@import '../../../sassStyles/animations.scss';
 
-	100% {
-		transform: rotate(360deg);
-	}
-}
-.decore {
+.decor-top {
     position: absolute;
     right: -20%;
     top: -50%;

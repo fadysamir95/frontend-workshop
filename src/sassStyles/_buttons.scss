@@ -1,0 +1,15 @@
+/* Main Button */
+.main-btn {
+    background-color: #FF7C16 !important;
+    border-color: #FF7C16 !important;
+    width: 150px !important;
+    border-radius: 10px !important;
+    height: 50px !important;
+    color: #fff !important;
+    font-size: 1rem !important;
+}
+.main-btn:hover, .main-btn:active, .main-btn:focus {
+    box-shadow: none !important;
+    background-color: rgb(255, 146, 62) !important;
+    border-color: rgb(255, 146, 62) !important;
+}
