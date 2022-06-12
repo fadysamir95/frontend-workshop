@@ -2,6 +2,24 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Packages i used
+
+### `react-bootstrap`
+
+### `react-icons`
+
+### `node-sass`
+
+## Notes
+
+I used SASS in a lot of things like:
+
+### `Media Queries`
+
+### `Buttons`
+
+And so on...
+
 ## Available Scripts
 
 In the project directory, you can run:
