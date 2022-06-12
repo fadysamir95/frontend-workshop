@@ -41,13 +41,15 @@ const Footer = props => {
                             </div>
                         </div>
                         <div className="area-five">
-                            <FaFacebookF />
-                            <FaInstagram />
-                            <FaTwitter />
+                            <div className="icons">
+                                <FaFacebookF />
+                                <FaInstagram />
+                                <FaTwitter />
+                            </div>
                             <p>Discover our app</p>
                             <div class="d-flex">
                                 {/* Google Play */}
-                                <div class="d-flex justify-content-center align-items-center app-store">
+                                <div class="d-flex justify-content-center align-items-center app-download">
                                     <div className="icon-wrapper"><img src={googlePlay} alt={'Google Play'} className="google-play-img" /></div>
                                     <div class="text-wrapper">
                                         <p>GET IT</p>
@@ -55,7 +57,7 @@ const Footer = props => {
                                     </div>
                                 </div>
                                 {/* Apple Store */}
-                                <div class="d-flex justify-content-center align-items-center app-store play-store">
+                                <div class="d-flex justify-content-center align-items-center app-download play-store">
                                     <div className="icon-wrapper"><BsApple className="mr-2" /></div>
                                     <div class="text-wrapper">
                                         <p>Available on</p>

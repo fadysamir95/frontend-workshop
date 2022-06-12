@@ -135,6 +135,7 @@ html, body {
   }
   .footer-sec .area-one p {
     font-size: 1.2rem;
+    width: 100%;
   }
   .footer-sec .copyright p {
     font-size: 1rem;
@@ -145,9 +146,6 @@ html, body {
   }
   .footer-sec .footer-title {
     font-size: 1.2rem;
-  }
-  .footer-sec .area-one p {
-    width: 100%;
   }
 }
 
@@ -195,7 +193,7 @@ html, body {
   }
   .slider-img {
     position: static;
-    width: 354px;
+    width: 100%;
   }
   .slider-caption {
     margin-top: 2.5rem;
@@ -225,6 +223,12 @@ html, body {
   .circles-shape {
     display: none;
   }
+  .cards-sec .card {
+    width: 100% !important;
+  }
+  .cards-sec .card .card-title {
+    max-height: 70px;
+  }
   .cards-sec .categories-wrapper {
     flex-wrap: wrap;
   }
@@ -233,7 +237,7 @@ html, body {
     margin-bottom: 1rem;
   }
   .img-service img {
-    width: 85%;
+    width: 50%;
   }
   .footer-sec {
     padding: 3rem 0 0 0;
@@ -266,6 +270,7 @@ html, body {
   }
   .footer-sec .area-one p {
     font-size: 1.2rem;
+    width: 50%;
   }
   .footer-sec .copyright p {
     font-size: 1rem;
@@ -277,14 +282,6 @@ html, body {
   .footer-sec .footer-title {
     font-size: 1.2rem;
   }
-  .footer-sec .area-one p {
-    width: 100%;
-  }
-}
-
-/* Tablet Devices (Portrait Mode) */
-@media screen and ($tabletPortraitModeMin) and ($tabletPortraitModeMax) {
-  
 }
 
 /* Large Screen */

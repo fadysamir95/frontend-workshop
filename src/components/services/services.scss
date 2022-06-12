@@ -66,3 +66,7 @@
 .col-three {
     transform: translateY(-60px);
 }
+.services-sec .content img:hover, .services-sec .content img:active, .services-sec .content img:focus {
+    opacity: 0.7;
+    cursor: pointer;
+}
