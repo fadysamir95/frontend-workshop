@@ -10,7 +10,9 @@ import './home.scss'
 const Home = props => {
     return (
         <div>
+            {/* Decoration on top */}
             <div className="decor-top"><img src={Decore} alt="Decore" /></div>
+            
             {/* Header Component */}
             <Header />
 

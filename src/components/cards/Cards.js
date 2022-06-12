@@ -10,10 +10,10 @@ import './cards.scss'
 
 const Cards = props => {
 
-    const [visibility, setVisibility] = useState([]);
+    const [visibility, setVisibility] = useState(newsListing);
 
     useEffect(() => {
-
+        // Hold the category
         let selectedCategory = categories.filter(category => {
             if (category.name === visibility) {
                 return category
@@ -26,26 +26,33 @@ const Cards = props => {
         })
 
         let valueId = currentCategoryId.join();
-        console.log(valueId);
 
         let selectedItems = newsListing.filter(item => {
-           if (item.categoryID === valueId) {
+            if (item.categoryID === valueId) {
                 item.showOnHomepage = 'yes'
             }
             else if (item.categoryID !== valueId) {
-                if (item.categoryID === 'yes') {
+                if (item.showOnHomepage === 'yes') {
                     item.showOnHomepage = 'no'
                 }
                 else {
                     item.showOnHomepage = 'no'
-                } 
-            }
-            else {
-                console.log("")
+                }
             }
         });
-        console.log(selectedItems);
 
+        // All Categories
+        newsListing.filter(item => {
+            if (visibility == 'All') {
+                item.showOnHomepage = 'yes'
+            }
+        })
+
+        console.log(newsListing);
+
+        // Set State
+        setVisibility(newsListing);
+        
     }, [visibility])
 
     return (
@@ -61,8 +68,9 @@ const Cards = props => {
                             <h1>Top News</h1>
                         </div>
                         <Col md={12}>
+                            {/* Categories */}
                             <div className="categories-wrapper">
-                                <Button variant="primary" value={'All news'} onClick={(e) => setVisibility(e.target.value)}>All news</Button>
+                                <Button variant="primary" value={'All'} onClick={(e) => setVisibility(e.target.value)}>All news</Button>
                                 {
                                     categories.map(category => {
                                         return (
@@ -80,6 +88,7 @@ const Cards = props => {
                                 return (
                                     (item.showOnHomepage === "yes" ? 
                                         <Col md={4} className="d-flex justify-content-center">
+                                            {/* Cards */}
                                             <Card style={{ width: '90%' }}>
                                                 <Card.Img variant="top" src={item.urlToImage} className="card-img" />
                                                 <Card.Body>

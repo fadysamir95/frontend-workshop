@@ -3,7 +3,6 @@ import { Carousel, Container, Row, Col, Button } from 'react-bootstrap'
 import Traveller from '../../assets/img/traveller1.png'
 import Shape from '../../assets/img/shape-title.png'
 import Play from '../../assets/img/play.png'
-import { Link } from 'react-router-dom'
 import './slider.scss'
 
 const Slider = props => {
@@ -20,7 +19,6 @@ const Slider = props => {
                                     <img src={Shape} alt={Shape} className="title-shape" />
                                     <p className="slider-brief">Link Development, the global technology solutions provider and an A15 company, unveiled today that it has recently marked its Silver Jubilee anniversary.</p>
                                     <Button variant="primary" className="main-btn">Find out more</Button>{' '}
-                                    {/* <Link to='https://www.google.com'><img src={Play} alt={'Play'} className="play-demo" /></Link> */}
                                     <img src={Play} alt={'Play'} className="play-demo" />
                                 </div>
                             </Col>

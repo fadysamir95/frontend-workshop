@@ -54,15 +54,8 @@ const Services = props => {
                 </div>
             </section>
 
+            {/* Responsive Services Section */}
             <section className="services-responsive-sec d-none">
-                {/* Section Decor */}
-                {/* <div className="word-shape">
-                    <img src={wordShape} alt={'Things We Do'} />
-                </div> */}
-                {/* Section Decor */}
-                {/* <div className="decor">
-                    <img src={servicesDecor} alt={''} />
-                </div> */}
                 <div className="content">
                     <Container className="h-100">
                         <Row>
