@@ -29,11 +29,12 @@
 }
 .footer-sec .area-one p {
     font-family: "poppins-medium";
-    font-size: 0.8rem;
+    font-size: 0.9em;
     color: #5E6282;
+    width: 67%;
 }
 .footer-sec .footer-title {
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-family: "poppins-bold";
     color: #080809;
 }
@@ -41,20 +42,73 @@
     cursor: pointer;
     color: #5E6282;
     font-family: "poppins-medium";
-    font-size: 0.9rem;
+    font-size:  1.1rem;
 }
 .footer-sec .footer-links p:hover, .footer-sec .footer-links p:active, .footer-sec .footer-links p:focus {
     color: #FF7C16;
 }
 .footer-sec .copyright {
-    padding: 2rem;
+    padding: 2.3rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .footer-sec .copyright p {
     font-family: "poppins-medium";
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #5E6282;
     margin-bottom: 0;
+}
+.footer-sec .area-five svg {
+    font-size: 41px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 20px rgb(0 0 0 / 10%);
+    padding: 13px;
+    border-radius: 50%;
+    color: #080809;
+    margin-right: 1.5rem;
+    margin-bottom: 1.8rem;
+}
+.footer-sec .area-five p {
+    font-family: "poppins-medium";
+    color: #5E6282;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+.footer-sec .app-store {
+    background-color: #080809;
+    width: 125px;
+    border-radius: 18px;
+    padding: 7px;
+}
+.footer-sec .app-store .icon-wrapper {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.footer-sec .app-store .icon-wrapper svg {
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+    font-size: 32px;
+    padding: 8px;
+}
+.footer-sec .app-store .text-wrapper p {
+    margin-bottom: 0.2rem;
+    font-size: 10px;
+    color: #fff;
+}
+.footer-sec .app-store .text-wrapper p:first-child {
+    font-size: 0.55rem;
+    margin-bottom: 0;
+}
+.footer-sec .app-store .text-wrapper p:last-child {
+    font-size: 0.6rem;
+    margin-bottom: 0;
+}
+.footer-sec .play-store {
+    margin-left: 0.5rem;
+}
+.footer-sec .google-play-img {
+    width: 24px;
+    margin-right: 0.7rem;
 }

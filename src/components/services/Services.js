@@ -77,7 +77,7 @@ const Services = props => {
                         </Row>
                         <Row>
                             {/* All Services */}
-                            <Col md={12}>
+                            <Col md={12} className="img-service">
                                 <div className="d-flex justify-content-center mb-4"><img src={Transformation} alt={'Transformation'} /></div>
                                 <div className="d-flex justify-content-center mb-4"><img src={Envision} alt={'Envision'} /></div>
                                 <div className="d-flex justify-content-center mb-4"><img src={Dynamic} alt={'Dynamic'} /></div>

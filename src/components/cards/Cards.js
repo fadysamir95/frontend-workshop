@@ -80,7 +80,7 @@ const Cards = props => {
                                 return (
                                     (item.showOnHomepage === "yes" ? 
                                         <Col md={4} className="d-flex justify-content-center">
-                                            <Card style={{ width: '98%' }}>
+                                            <Card style={{ width: '90%' }}>
                                                 <Card.Img variant="top" src={item.urlToImage} className="card-img" />
                                                 <Card.Body>
                                                     <Card.Title>{item.title}</Card.Title>

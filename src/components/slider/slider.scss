@@ -37,9 +37,9 @@
 }
 .slider-img {
     position: absolute;
-    bottom: 0;
-    right: 4%;
-    width: 670px;
+    bottom: 0px;
+    right: 10%;
+    width: 675px;
 }
 .carousel-indicators {
     right: 0 !important;
@@ -47,7 +47,7 @@
     left: 0 !important;
     justify-content: flex-start !important;
     margin-bottom: 0.5rem;
-    margin-left: 10% !important;
+    margin-left: 7.4% !important;
     align-items: center;
 }
 .carousel-indicators button {
@@ -85,4 +85,9 @@
 }
 .carousel-control-prev, .carousel-control-next {
     display: none !important;
+}
+.play-demo {
+    margin-left: 2.7rem;
+    width: 9.4rem;
+    cursor: pointer;
 }

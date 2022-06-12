@@ -1,6 +1,9 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Logo from '../../../assets/img/logo.png'
+import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { BsApple } from 'react-icons/bs'
+import googlePlay from '../../../assets/img/icons/google-play.png'
 import './footer.scss'
 
 const Footer = props => {
@@ -38,8 +41,28 @@ const Footer = props => {
                             </div>
                         </div>
                         <div className="area-five">
-                            <i class="fab fa-lg fa-facebook-f"></i>
+                            <FaFacebookF />
+                            <FaInstagram />
+                            <FaTwitter />
                             <p>Discover our app</p>
+                            <div class="d-flex">
+                                {/* Google Play */}
+                                <div class="d-flex justify-content-center align-items-center app-store">
+                                    <div className="icon-wrapper"><img src={googlePlay} alt={'Google Play'} className="google-play-img" /></div>
+                                    <div class="text-wrapper">
+                                        <p>GET IT</p>
+                                        <p>GOOGLE PLAY</p>
+                                    </div>
+                                </div>
+                                {/* Apple Store */}
+                                <div class="d-flex justify-content-center align-items-center app-store play-store">
+                                    <div className="icon-wrapper"><BsApple className="mr-2" /></div>
+                                    <div class="text-wrapper">
+                                        <p>Available on</p>
+                                        <p>Apple</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <Row>
